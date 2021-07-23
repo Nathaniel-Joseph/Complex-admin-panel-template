@@ -31,57 +31,156 @@
       </style>
       <!-- innerCSS ending -->
 
+      <!-- icons link -->
+            <link rel="stylesheet" href="assets/dist/css/all.min.css">
+      <!-- icons link ending -->
+
       <!-- Custom styles for this template -->
       <link href="assets/dist/css/Style.css" rel="stylesheet">
       <!-- Custom styles for this template ending -->
 </head>
 
 <body>
-      <!-- navabar -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+      <!-- sidebar -->
+      <aside class="position-fixed h-100">
+            <img src="assets/img/Logo.png" class="mt-3 ms-2" width="60%" alt="">
+
+            <div class="mt-4 text-center">
+                  <button class="btn bg-transparent border-0 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-home"></i></div>
+                        <div>Dashboard</div>
                   </button>
 
-                  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                              <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                              </li>
-                              <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1"
-                                          aria-disabled="true">Disabled</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01"
-                                          data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                              </li>
-                        </ul>
-                        <form class="d-flex">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                  </div>
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-exchange-alt"></i></div>
+                        <div>Transfers</div>
+                  </button>
+
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-wallet"></i></div>
+                        <div>Wallets</div>
+                  </button>
+
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-credit-card"></i></div>
+                        <div>Cards</div>
+                  </button>
+
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-chart-line"></i></div>
+                        <div>Reports</div>
+                  </button>
+
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-user"></i></div>
+                        <div>My profile</div>
+                  </button>
+
+                  <button class="btn bg-transparent border-0 mt-2 text-muted text-center w-100">
+                        <div class="fs-4"><i class="fas fa-cog"></i></div>
+                        <div>Settings</div>
+                  </button>
             </div>
-      </nav>
-      <!-- navabar ending -->
+      </aside>
+      <!-- sidebar ending -->
+
+      <main class="bg-light pt-3">
+            <!-- navabar -->
+                  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+                        <div class="container-fluid">
+                              <form class="d-flex">
+                                    <input class="form-control me-2 border-0" type="text" placeholder="Search for people, Method, Amount">
+                              </form>
+
+                              <div class="dropdown">
+                                    <button class="btn btn-outline-primary btn-lg" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fas fa-calendar me-2"></i> <span class="text-dark">Monthly</span> <i class="fas fa-angle-down ms-2"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Daily</a></li>
+                                      <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                      <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </nav>
+            <!-- navabar ending -->
+
+            <!-- large text & btn -->
+                  <div class="row p-2">
+                        <div class="col-md-6">
+                              <span class="fw-bold fs-2">Dashboard</span> <br>
+                              <span class="fw-bold fs-6">Realtime insites on various activities</span>
+                        </div>
+
+                        <div class="col-md-6 float-end">
+                              <button class="btn btn-primary btn-lg float-end mt-4"><i class="fas fa-wallet me-2"></i> Fund wallet</button>
+                        </div>
+                  </div>
+            <!-- large text & btn ending -->
+
+            <!-- card -->
+                  <div class="row row-cols-1 row-cols-md-3 g-4 p-2">
+                        <div class="col">
+                              <div class="card h-100 pt-4 pb-1 card-1 border-0 shadow-sm">
+                                    <div class="card-body">
+                                          <h5 class="fs-6 fw-bold">Wallet balance</h5>
+                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 4,509,063</h3>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col">
+                              <div class="card h-100 card-2 border-0 shadow-sm pt-4 pb-1">
+                                    <div class="card-body">
+                                          <h5 class="fs-6 fw-bold">Amount spent</h5>
+                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 3,041,730</h3>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col">
+                              <div class="card h-100 card-3 shadow-sm border-0 pt-4 pb-1">
+                                    <div class="card-body">
+                                          <h5 class="fs-6 fw-bold">Amount spent</h5>
+                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 1,021,238</h3>
+                                    </div>
+                              </div>
+                        </div>
+                </div>
+            <!-- card ending -->
+
+            <!-- chart -->
+                <div class="mt-4 p-2">
+                      <div class="row mb-3">
+                            <div class="col-md-7">
+                                  <button class="btn bg-transparent border-0 fw-bold text-muted pb-2 ms-3 mb-2">Wallet</button>
+                                  <button class="btn bg-transparent border-0 fw-bold text-muted fs-6 pb-2 ms-0 mb-2">Card transaction</button>
+                                  <button class="btn bg-transparent border-0 fw-bold fs-6 text-muted pb-2 ms-0 mb-2">Investment</button>
+                            </div>
+
+                            <div class="col-md-5">
+                                  <div class="dropdown">
+                                          <button class="btn bg-white border fs-6 fw-bold float-end btn-lg"  type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Duration <span class="ms-3"><i class="fas fa-angle-down"></i></span></button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                <li><a class="dropdown-item" href="#">Daily</a></li>
+                                                <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                                <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                          </ul>
+                                  </div>
+                            </div>
+                      </div>
+
+                      <canvas id="myChart" width="100%"></canvas>
+                </div>
+            <!-- chart ending -->
+      </main>
 
 
-
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script src="assets/dist/js/all.min.js"></script>
       <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/dist/js/main.js"></script>
 </body>
 
 </html>

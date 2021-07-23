@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* basic styling */
+	html{
+		overflow-x: hidden;
+	}
+
+	body{
+		margin: 0;
+		padding: 0%;
+		box-sizing: border-box;
+		overflow-x: hidden;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	/* universal */
+		input:focus{
+			box-shadow: none !important;
+		}
+
+		button:focus{
+			box-shadow: none !important;
+		}
+	/* universal ending */
+/* basic styling ending */
+
+/* sidebar */
+	aside{
+		width: 6.800%;
+	}
+
+	aside > div > button > div:nth-child(2) {
+		font-size: .8rem;
+		font-weight: 600;
+	}
+
+	aside > div > button:focus{
+		border-left: 4px solid #0d6efd !important;
+		border-radius: 0%;
+		box-shadow: none !important;
+		background-color: #f8f9fa !important;
+		transition: .2s ease-in-out;
+	}
+
+	aside > div > button:hover{
+		border-left: 4px solid #0d6efd !important;
+		border-radius: 0%;
+		box-shadow: none !important;
+		background-color: #f8f9fa !important;
+		transition: .2s ease-in-out;
+	}
+/* sidebar ending */
+
+/* main */
+	main{
+		width: 55%;
+		margin-left: 6.500%;
+		height: 100% !important;
+	}
+	
+	/* top cards */
+		main > .row > .col > .card-1 {
+			background: #e7f1ff;
+		}
+
+		main > .row > .col > .card-2 {
+			background: #ffc1072d;
+		}
+
+		main > .row > .col > .card-3 {
+			background: #6e42c11c;
+		}
+	/* top cards ending */
+
+	/* chart link */
+		main > .mt-4 > .row > .col-md-7 > button{
+			transition: .3s ease-in-out;
+			border-radius: 0% !important;
+			border-bottom: 3px solid transparent !important;
+		}
+
+		main > .mt-4 > .row > .col-md-7 > button:hover {
+			border-bottom: 3px solid transparent !important;
+			color: #222 !important;
+			border-radius: 0%;
+		}
+
+		main > .mt-4 > .row > .col-md-7 > button:focus {
+			border-bottom: 3px solid #0d6efd !important;
+			color: #222 !important;
+			border-radius: 0%;
+		}
+	/* chart link ending */
+/* main ending */
+
+/* nav */
+	nav > div > form > input{
+		width: 400px !important;
+		height: 50px;
+		border-radius: 50px !important;
+	}
+
+	nav > div > form > input::-webkit-input-placeholder{
+		color: rgba(85, 85, 85, 0.322) !important;
+		font-weight: 600;
+		padding-left: 0px;
+	}
+
+	nav > div > div > button{
+		background-color: #e7f1ff !important;
+		border: 1px solid #0d6efd !important;
+	}
+
+	nav > div > div > button > span{
+		font-size: .9rem;
+		font-weight: 600;
+	}
+
+	nav > div > div > button:hover{
+		color: #0d6efd !important;
+	}
+/* nav ending */
+
+/* @media */
+	@media (max-width: 425px) {
+		aside{
+			display: none;
+		}
+
+		main{
+			margin-left: 0%;
+			width: 100%;
+		}
+
+		nav > div > form > input{
+			width: 100% !important;
+			height: initial;
+			border-radius: 50px !important;
+		}
+
+		nav > div > form > input::-webkit-input-placeholder{
+			color: rgba(85, 85, 85, 0.322) !important;
+			font-weight: 400;
+			font-size: .7rem;
+			padding-left: 0px;
+		}
+
+		nav > div > div > .btn-lg{
+			padding: 3px !important;
+			font-size: 1rem !important;
+		}
+
+		main > .p-2 > .float-end > button{
+			width: 100%;
+		}
+
+		main > .mt-4 > .row > .col-md-7 > button{
+			transition: .3s ease-in-out;
+			border-radius: 0% !important;
+			border-bottom: 3px solid transparent !important;
+			margin-left: 0px !important;
+		}
+		
+
+		main > .mt-4 > .row > .col-md-7 > button:hover{
+			font-size: initial !important;
+		}
+
+		main > .mt-4 > .row > .col-md-5 > div > button{
+			display: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		aside{
+			display: none;
+		}
+
+		main{
+			width: 100%;
+			margin-left: 0%;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		aside{
+			display: none;
+		}
+
+		main{
+			width: 100%;
+			margin-left: 0%;
+		}
+	}
+
+	@media (max-width: 540px) {
+		aside{
+			display: none;
+		}
+
+		main{
+			margin-left: 0%;
+			width: 100%;
+		}
+
+		nav > div > form > input{
+			width: 100% !important;
+			height: initial;
+			border-radius: 50px !important;
+		}
+
+		nav > div > form > input::-webkit-input-placeholder{
+			color: rgba(85, 85, 85, 0.322) !important;
+			font-weight: 400;
+			font-size: .7rem;
+			padding-left: 0px;
+		}
+
+		nav > div > div > .btn-lg{
+			padding: 3px !important;
+			font-size: 1rem !important;
+		}
+
+		main > .p-2 > .float-end > button{
+			width: 100%;
+		}
+
+		main > .mt-4 > .row > .col-md-7 > button{
+			transition: .3s ease-in-out;
+			border-radius: 0% !important;
+			border-bottom: 3px solid transparent !important;
+			margin-left: 0px !important;
+		}
+		
+
+		main > .mt-4 > .row > .col-md-7 > button:hover{
+			font-size: initial !important;
+		}
+
+		main > .mt-4 > .row > .col-md-5 > div > button{
+			display: none;
+		}
+	}
+
+	@media (max-width: 320px) {
+		aside{
+			display: none;
+		}
+
+		main{
+			margin-left: 0%;
+			width: 100%;
+		}
+
+		nav > div > form > input{
+			width: 100% !important;
+			height: initial;
+			border-radius: 50px !important;
+		}
+
+		nav > div > form > input::-webkit-input-placeholder{
+			color: rgba(85, 85, 85, 0.322) !important;
+			font-weight: 400;
+			font-size: .7rem;
+			padding-left: 0px;
+		}
+
+		nav > div > div > .btn-lg{
+			padding: 3px !important;
+			font-size: 1rem !important;
+		}
+
+		main > .p-2 > .float-end > button{
+			width: 100%;
+		}
+
+		main > .mt-4 > .row > .col-md-7 > button{
+			transition: .3s ease-in-out;
+			border-radius: 0% !important;
+			border-bottom: 3px solid transparent !important;
+			margin-left: 0px !important;
+		}
+		
+
+		main > .mt-4 > .row > .col-md-7 > button:hover{
+			font-size: initial !important;
+		}
+
+		main > .mt-4 > .row > .col-md-5 > div > button{
+			display: none;
+		}
+	}
+/* @media ending */
