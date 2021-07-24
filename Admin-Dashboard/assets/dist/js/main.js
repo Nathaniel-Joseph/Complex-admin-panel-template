@@ -6,8 +6,11 @@
     data: {
         labels: xValues,
         datasets: [{ 
-            data: [4900,4900,4900,4900,5000,5900,6000,6900,7000,7900],
-            borderColor: "green",
+            data: [7900,7000,6900,6000,5900,5000,6900,6000,7900,4000],
+            borderColor: "#0d6efd",
+            backgroundColor: [
+                "#e7f1ff",
+            ],
             fill: true
         }]
     },

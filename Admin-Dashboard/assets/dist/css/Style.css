@@ -52,21 +52,20 @@
 
 /* main */
 	main{
-		width: 55%;
-		margin-left: 6.500%;
+		margin-left: 6.500% !important;
 		height: 100% !important;
 	}
 	
 	/* top cards */
-		main > .row > .col > .card-1 {
+		main > div > .row > .col > .card-1 {
 			background: #e7f1ff;
 		}
 
-		main > .row > .col > .card-2 {
-			background: #ffc1072d;
+		main > div > .row > .col > .card-2 {
+			background: #ffc10723;
 		}
 
-		main > .row > .col > .card-3 {
+		main > div > .row > .col > .card-3 {
 			background: #6e42c11c;
 		}
 	/* top cards ending */
@@ -90,6 +89,12 @@
 			border-radius: 0%;
 		}
 	/* chart link ending */
+
+	/* table */
+		main > table {
+			width: 98% !important;
+		}
+	/* table ending */
 /* main ending */
 
 /* nav */
@@ -167,6 +172,10 @@
 
 		main > .mt-4 > .row > .col-md-5 > div > button{
 			display: none;
+		}
+
+		table{
+			font-size: .5rem !important;
 		}
 	}
 

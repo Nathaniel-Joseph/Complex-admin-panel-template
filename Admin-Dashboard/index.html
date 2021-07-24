@@ -84,96 +84,136 @@
       </aside>
       <!-- sidebar ending -->
 
-      <main class="bg-light pt-3">
-            <!-- navabar -->
-                  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-                        <div class="container-fluid">
-                              <form class="d-flex">
-                                    <input class="form-control me-2 border-0" type="text" placeholder="Search for people, Method, Amount">
-                              </form>
+      <main class="row">
+            <div class="col-md-7 bg-light">
+                  <!-- navabar -->
+                        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+                              <div class="container-fluid">
+                                    <form class="d-flex">
+                                          <input class="form-control me-2 border-0" type="text" placeholder="Search for people, Method, Amount">
+                                    </form>
 
-                              <div class="dropdown">
-                                    <button class="btn btn-outline-primary btn-lg" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-calendar me-2"></i> <span class="text-dark">Monthly</span> <i class="fas fa-angle-down ms-2"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Daily</a></li>
-                                      <li><a class="dropdown-item" href="#">Weekly</a></li>
-                                      <li><a class="dropdown-item" href="#">Yearly</a></li>
-                                    </ul>
-                              </div>
-                        </div>
-                  </nav>
-            <!-- navabar ending -->
-
-            <!-- large text & btn -->
-                  <div class="row p-2">
-                        <div class="col-md-6">
-                              <span class="fw-bold fs-2">Dashboard</span> <br>
-                              <span class="fw-bold fs-6">Realtime insites on various activities</span>
-                        </div>
-
-                        <div class="col-md-6 float-end">
-                              <button class="btn btn-primary btn-lg float-end mt-4"><i class="fas fa-wallet me-2"></i> Fund wallet</button>
-                        </div>
-                  </div>
-            <!-- large text & btn ending -->
-
-            <!-- card -->
-                  <div class="row row-cols-1 row-cols-md-3 g-4 p-2">
-                        <div class="col">
-                              <div class="card h-100 pt-4 pb-1 card-1 border-0 shadow-sm">
-                                    <div class="card-body">
-                                          <h5 class="fs-6 fw-bold">Wallet balance</h5>
-                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 4,509,063</h3>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <div class="col">
-                              <div class="card h-100 card-2 border-0 shadow-sm pt-4 pb-1">
-                                    <div class="card-body">
-                                          <h5 class="fs-6 fw-bold">Amount spent</h5>
-                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 3,041,730</h3>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <div class="col">
-                              <div class="card h-100 card-3 shadow-sm border-0 pt-4 pb-1">
-                                    <div class="card-body">
-                                          <h5 class="fs-6 fw-bold">Amount spent</h5>
-                                          <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 1,021,238</h3>
-                                    </div>
-                              </div>
-                        </div>
-                </div>
-            <!-- card ending -->
-
-            <!-- chart -->
-                <div class="mt-4 p-2">
-                      <div class="row mb-3">
-                            <div class="col-md-7">
-                                  <button class="btn bg-transparent border-0 fw-bold text-muted pb-2 ms-3 mb-2">Wallet</button>
-                                  <button class="btn bg-transparent border-0 fw-bold text-muted fs-6 pb-2 ms-0 mb-2">Card transaction</button>
-                                  <button class="btn bg-transparent border-0 fw-bold fs-6 text-muted pb-2 ms-0 mb-2">Investment</button>
-                            </div>
-
-                            <div class="col-md-5">
-                                  <div class="dropdown">
-                                          <button class="btn bg-white border fs-6 fw-bold float-end btn-lg"  type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Duration <span class="ms-3"><i class="fas fa-angle-down"></i></span></button>
-                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                                <li><a class="dropdown-item" href="#">Daily</a></li>
-                                                <li><a class="dropdown-item" href="#">Weekly</a></li>
-                                                <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                    <div class="dropdown">
+                                          <button class="btn btn-outline-primary btn-lg" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-calendar me-2"></i> <span class="text-dark">Monthly</span> <i class="fas fa-angle-down ms-2"></i>
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Daily</a></li>
+                                          <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                          <li><a class="dropdown-item" href="#">Yearly</a></li>
                                           </ul>
-                                  </div>
-                            </div>
-                      </div>
+                                    </div>
+                              </div>
+                        </nav>
+                  <!-- navabar ending -->
 
-                      <canvas id="myChart" width="100%"></canvas>
-                </div>
-            <!-- chart ending -->
+                  <!-- large text & btn -->
+                        <div class="row p-2">
+                              <div class="col-md-6">
+                                    <span class="fw-bold fs-2">Dashboard</span> <br>
+                                    <span class="fw-bold fs-6">Realtime insites on various activities</span>
+                              </div>
+
+                              <div class="col-md-6 float-end">
+                                    <button class="btn btn-primary btn-lg fs-6 float-end mt-4"><i class="fas fa-wallet me-2"></i> Fund wallet</button>
+                              </div>
+                        </div>
+                  <!-- large text & btn ending -->
+
+                  <!-- card -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 p-2">
+                              <div class="col">
+                                    <div class="card h-100 pt-4 pb-1 card-1 border-0 shadow-sm">
+                                          <div class="card-body">
+                                                <h5 class="fs-6 fw-bold">Wallet balance</h5>
+                                                <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 4,509,063</h3>
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="col">
+                                    <div class="card h-100 card-2 border-0 shadow-sm pt-4 pb-1">
+                                          <div class="card-body">
+                                                <h5 class="fs-6 fw-bold">Amount spent</h5>
+                                                <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 3,041,730</h3>
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="col">
+                                    <div class="card h-100 card-3 shadow-sm border-0 pt-4 pb-1">
+                                          <div class="card-body">
+                                                <h5 class="fs-6 fw-bold">Amount spent</h5>
+                                                <h3 class="fw-bold"><i class="fas fa-yen-sign"></i> 1,021,238</h3>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  <!-- card ending -->
+
+                  <!-- chart -->
+                        <div class="mt-4 p-2">
+                              <div class="row mb-3">
+                                    <div class="col-md-7">
+                                          <button class="btn bg-transparent border-0 fw-bold text-muted pb-2 ms-3 mb-2">Wallet</button>
+                                          <button class="btn bg-transparent border-0 fw-bold text-muted fs-6 pb-2 ms-0 mb-2">Card transaction</button>
+                                          <button class="btn bg-transparent border-0 fw-bold fs-6 text-muted pb-2 ms-0 mb-2">Investment</button>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                          <div class="dropdown">
+                                                      <button class="btn bg-white border fs-6 fw-bold float-end btn-lg"  type="button"  id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Duration <span class="ms-3"><i class="fas fa-angle-down"></i></span></button>
+                                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                            <li><a class="dropdown-item" href="#">Daily</a></li>
+                                                            <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                                            <li><a class="dropdown-item" href="#">Monthly</a></li>
+                                                            <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                                      </ul>
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <canvas id="myChart" width="100%"></canvas>
+                        </div>
+                  <!-- chart ending -->
+
+                  <!-- tabel -->
+                        <table class="table table-borderless m-2 mt-4 table-responsive">
+                              <thead class="text-primary">
+                                    <tr>
+                                          <th scope="col" style="width: 26%;">Transaction Type</th>
+                                          <th scope="col">Transfer Method</th>
+                                          <th scope="col">Amount</th>
+                                          <th scope="col">Date &amp; Time</th>
+                                    </tr>
+                              </thead>
+
+
+                              <tbody>
+                                    <tr class="text-muted fw-bold border-bottom">
+                                          <th scope="row" class="pt-3 pb-3">Transfers</th>
+                                          <td class="pt-3 pb-3">Card Transfer</td>
+                                          <td class="pb-3 pt-3"><i class="fas fa-yen-sign"></i>3,041,730</td>
+                                          <td class="pt-3 pb-3">19 July 4:30 pm</td>
+                                    </tr>
+
+                                    <tr class="text-muted fw-bold border-bottom">
+                                          <th scope="row" class="pb-3 pt-3">Withdrawal</th>
+                                          <td class="pt-3 pb-3">Wallet Debit</td>
+                                          <td class=" pt-3 pb-3"><i class="fas fa-yen-sign"></i>3,041,730</td>
+                                          <td class="pb-3 pt-3">19 July 4:30 pm</td>
+                                    </tr>
+
+                                    <tr class="text-muted fw-bold mt-5 border-bottom">
+                                          <th scope="row" class="pt-3 pb-3">Transfers</th>
+                                          <td class="pb-3 pt-3">Card Transfer</td>
+                                          <td class="pt-3 pb-3"><i class="fas fa-yen-sign"></i>3,041,730</td>
+                                          <td class="pb-3 pt-3">19 July 4:30 pm</td>
+                                    </tr>
+                              </tbody>
+                        </table>
+                  <!-- tabel ending -->
+            </div>
       </main>
 
 
